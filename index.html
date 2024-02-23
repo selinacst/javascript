@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function light_ON(){
+            document.getElementById("light").src="light-on.png";
+        }
+        function light_OFF(){
+            document.getElementById("light").src="light-off.png";
+        }
+        function light_yellow_white(){
+            document.getElementById("light").src="light-yellow-white.png"
+        }
+    </script>
+    </head>
+    <body style="background-color: brown;">
+        <div class="container"style="text-align:center";>
+            <h1 style="color: springgreen;text-align: center;">My Project</h1>
+            <img src="light-off.png" alt="" id="light" width="200">
+            <div class="btn_containter">
+                <button style="background-color: aqua;" id="ON" class="light_btn" onclick="light_ON()">ON</button>
+                <button style="background-color: aqua;" id="OFF" class="light_btn" onclick="light_OFF()">OFF</button>
+            </div>
+        </div>
+</body>
+</html>
